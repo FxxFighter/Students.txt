@@ -5,7 +5,7 @@ using namespace std;
 
 struct Student {
     string name;
-    double grades[4]; // دقیقاً 4 نمره برای هر دانشجو
+    double grades[4];
     double average;
 };
 
@@ -25,7 +25,7 @@ int main() {
         return 1;
     }
 
-    Student students[1000]; // حداکثر 1000 دانشجو
+    Student students[1000]; 
     int studentCount = 0;
     double totalAverage = 0.0;
 
@@ -44,7 +44,6 @@ int main() {
 
     inputFile.close();
 
-    // نمایش نتایج
     for (int i = 0; i < studentCount; i++) {
         cout << "نام: " << students[i].name << ", معدل: " << students[i].average << endl;
     }
